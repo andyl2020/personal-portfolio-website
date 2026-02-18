@@ -27,10 +27,10 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,box-shadow] duration-500 backdrop-blur-md ${
+      className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-[box-shadow] duration-500 bg-white/95 border-b border-[#E7E5E4]/60 ${
         scrolled
-          ? "bg-[#F0EBE3]/95 border-b border-[#E7E2D9] shadow-[0_1px_8px_rgba(28,25,23,0.04)]"
-          : "bg-[#F0EBE3]/80"
+          ? "shadow-[0_1px_8px_rgba(28,25,23,0.04)]"
+          : ""
       }`}
     >
       <nav className="max-w-[1200px] mx-auto px-6 md:px-12 flex items-center justify-between h-[72px]">

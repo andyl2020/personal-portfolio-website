@@ -40,6 +40,28 @@ export const portfolioData = {
   ],
   projects: [
     {
+      name: "Tether",
+      subtitle: "Social Connection Community",
+      role: "Founder",
+      period: "2025 \u2014 Present",
+      context: "Side Project",
+      description: "Building a community in Vancouver focused on helping people form friendships through curated social events. Grew to 100+ members with sold-out events.",
+      tags: ["Community", "Event Design"],
+      link: "https://flocksocial.app/c/red-envelope-society-d73e93",
+      subtle: true
+    },
+    {
+      name: "Communication Coaching",
+      subtitle: "Interpersonal Skills & Confidence Building",
+      role: "Founder & Coach",
+      period: "2024 \u2014 Present",
+      context: "Side Project",
+      description: "Designed real-world practice frameworks to help people sharpen their communication skills and build social confidence. Delivered 70+ hours of 1-on-1 coaching with measurable client improvement across 15+ tracked metrics.",
+      tags: ["Coaching", "Communication Design"],
+      link: null,
+      subtle: true
+    },
+    {
       name: "Edventure",
       subtitle: "Community-First E-Learning Platform",
       role: "Co-Founder & Product Lead",
@@ -68,28 +90,6 @@ export const portfolioData = {
       description: "Built a real-time platform enabling event-specific, geolocation-based chatrooms during Local Hack Day at UBC.",
       tags: ["JavaScript", "Geolocation", "Real-time"],
       link: "https://github.com/andyl2020/chatrmaps"
-    },
-    {
-      name: "Communication Coaching",
-      subtitle: "Interpersonal Skills & Confidence Building",
-      role: "Founder & Coach",
-      period: "2024 \u2014 Present",
-      context: "Side Project",
-      description: "Designed real-world practice frameworks to help people sharpen their communication skills and build social confidence. Delivered 70+ hours of 1-on-1 coaching with measurable client improvement across 15+ tracked metrics.",
-      tags: ["Coaching", "Communication Design"],
-      link: null,
-      subtle: true
-    },
-    {
-      name: "Tether",
-      subtitle: "Social Connection Community",
-      role: "Founder",
-      period: "2025 \u2014 Present",
-      context: "Side Project",
-      description: "Building a community in Vancouver focused on helping people form friendships through curated social events. Grew to 100+ members with sold-out events.",
-      tags: ["Community", "Event Design"],
-      link: "https://flocksocial.app/c/red-envelope-society-d73e93",
-      subtle: true
     }
   ],
   skills: {
