@@ -6,8 +6,8 @@ export const portfolioData = {
     email: "aluu.life@gmail.com",
     tagline: "Building products at the intersection of technology and human connection.",
     about: [
-      "Technical Product Manager with a track record of leading complex enterprise migrations, launching new products, and building ventures from 0 to 1. Currently at Global Relay, where I spearhead the migration of core systems responsible for over 50% of company revenue—ensuring seamless, zero-downtime transitions for thousands of clients.",
-      "Beyond my day-to-day, I'm drawn to building things that bring people together. Whether it's shipping enterprise software or designing community experiences, I'm driven by the belief that the best products come from deeply understanding people."
+      "Technical Product Manager with a track record of leading complex enterprise migrations, launching new products, and building ventures from 0 to 1. Currently at Global Relay, where I spearhead the migration of core systems responsible for over 50% of company revenue\u2014ensuring seamless, zero-downtime transitions for thousands of clients.",
+      "Beyond my day-to-day, I\u2019m drawn to building things that bring people together\u2014whether that\u2019s shipping enterprise software, designing community experiences, or coaching individuals on communication. I believe the best products come from deeply understanding people."
     ],
     links: {
       linkedin: "https://linkedin.com/in/aluu",
@@ -18,7 +18,7 @@ export const portfolioData = {
     {
       company: "Global Relay",
       role: "Technical Product Manager",
-      period: "2022 — Present",
+      period: "2022 \u2014 Present",
       location: "Vancouver, BC",
       highlights: [
         "Spearheading migration of a core legacy system responsible for 50%+ of company revenue, ensuring zero-downtime transition for thousands of enterprise clients",
@@ -30,7 +30,7 @@ export const portfolioData = {
     {
       company: "Apryse",
       role: "Associate Product Manager",
-      period: "2021 — 2022",
+      period: "2021 \u2014 2022",
       location: "Vancouver, BC",
       highlights: [
         "Drove product discovery and implementation for a new B2B2C video annotation tool through foundational user research",
@@ -70,10 +70,21 @@ export const portfolioData = {
       link: "https://github.com/andyl2020/chatrmaps"
     },
     {
+      name: "Communication Coaching",
+      subtitle: "Interpersonal Skills & Confidence Building",
+      role: "Founder & Coach",
+      period: "2024 \u2014 Present",
+      context: "Side Project",
+      description: "Designed real-world practice frameworks to help people sharpen their communication skills and build social confidence. Delivered 70+ hours of 1-on-1 coaching with measurable client improvement across 15+ tracked metrics.",
+      tags: ["Coaching", "Communication Design"],
+      link: null,
+      subtle: true
+    },
+    {
       name: "Tether",
       subtitle: "Social Connection Community",
       role: "Founder",
-      period: "2025 — Present",
+      period: "2025 \u2014 Present",
       context: "Side Project",
       description: "Building a community in Vancouver focused on helping people form friendships through curated social events. Grew to 100+ members with sold-out events.",
       tags: ["Community", "Event Design"],
@@ -84,6 +95,6 @@ export const portfolioData = {
   skills: {
     "Product": ["Product Strategy", "Roadmap Planning", "MVP Development", "User Research", "A/B Testing"],
     "Technical": ["System Architecture", "API Design", "Data Analysis", "Agile / Scrum"],
-    "Leadership": ["Cross-functional Teams", "Stakeholder Management", "Enterprise Clients", "0 → 1 Building"]
+    "Leadership": ["Cross-functional Teams", "Stakeholder Management", "Enterprise Clients", "0 \u2192 1 Building", "Coaching"]
   }
 };
