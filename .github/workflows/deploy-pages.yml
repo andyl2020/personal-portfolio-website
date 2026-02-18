@@ -40,9 +40,6 @@ jobs:
           # CRA treats warnings as errors when CI=true (GitHub Actions default).
           CI: "false"
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -58,4 +55,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
