@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Andy Luu Coaching | 1:1 Social Skills Coaching</title>
+<meta name="description" content="1:1 social skills and confidence coaching for men, online and in Vancouver, BC. Conversations, confidence, dating, and cold approach.">
+<!--
+  Self-contained page: inline CSS, no external assets, no trackers, no build step.
+  Intentionally NOT linked from the homepage, nav, or anywhere else on the site.
+-->
+<style>
+  :root {
+    --ink: #1c1f23;
+    --muted: #5b6370;
+    --line: #e4e1da;
+    --bg: #fbfaf7;
+    --card: #ffffff;
+    --accent: #1f6f5c;
+    --accent-ink: #ffffff;
+    --accent-soft: #e6f1ed;
+    --radius: 14px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--bg);
+  }
+  a { color: var(--accent); }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  .wide { max-width: 960px; }
+
+  header.top { border-bottom: 1px solid var(--line); background: var(--bg); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .brand { font-weight: 700; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+  .brand span { color: var(--muted); font-weight: 500; }
+  .top-cta { font-size: 15px; font-weight: 600; text-decoration: none; }
+
+  section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: 0; }
+  h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 14px; }
+  h1 { font-size: 2.1rem; }
+  h2 { font-size: 1.55rem; }
+  h3 { font-size: 1.1rem; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+  .eyebrow {
+    display: inline-block; font-size: 13px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--accent); margin-bottom: 12px;
+  }
+  .lead { font-size: 1.15rem; color: var(--muted); }
+  .muted { color: var(--muted); }
+  .small { font-size: 15px; }
+
+  .btn {
+    display: inline-block; background: var(--accent); color: var(--accent-ink);
+    font-weight: 600; text-decoration: none; padding: 14px 22px; border-radius: 10px;
+    border: 2px solid var(--accent);
+  }
+  .btn:hover { background: #185a4a; border-color: #185a4a; }
+  .btn-ghost { background: transparent; color: var(--accent); }
+  .btn-ghost:hover { background: var(--accent-soft); border-color: var(--accent); }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+
+  .hero { padding: 64px 0 56px; }
+  .hero .note { margin-top: 18px; font-size: 15px; color: var(--muted); }
+
+  ul.clean { list-style: none; padding: 0; margin: 0 0 14px; }
+  ul.clean li { position: relative; padding-left: 28px; margin-bottom: 10px; }
+  ul.clean li::before {
+    content: ""; position: absolute; left: 4px; top: 0.62em; width: 10px; height: 10px;
+    border-radius: 50%; background: var(--accent);
+  }
+  ul.clean.no li::before { background: transparent; border: 2px solid #b9b3a6; }
+
+  .grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 22px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+
+  ol.steps { list-style: none; counter-reset: step; padding: 0; margin: 0; }
+  ol.steps li {
+    counter-increment: step; position: relative; padding: 0 0 22px 52px;
+  }
+  ol.steps li::before {
+    content: counter(step); position: absolute; left: 0; top: 0; width: 36px; height: 36px;
+    border-radius: 50%; background: var(--accent-soft); color: var(--accent);
+    font-weight: 700; display: flex; align-items: center; justify-content: center;
+  }
+  ol.steps li:last-child { padding-bottom: 0; }
+  ol.steps h3 { margin-bottom: 4px; padding-top: 6px; }
+  ol.steps p { margin: 0; color: var(--muted); }
+
+  .price-card { border: 2px solid var(--accent); position: relative; }
+  .tag {
+    display: inline-block; background: var(--accent-soft); color: var(--accent);
+    font-size: 13px; font-weight: 700; padding: 4px 10px; border-radius: 999px; margin-bottom: 10px;
+  }
+  .price { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1; margin: 6px 0 4px; }
+  .price small { font-size: 1rem; font-weight: 600; color: var(--muted); letter-spacing: 0; }
+  .was { color: var(--muted); text-decoration: line-through; }
+
+  .callout {
+    background: var(--accent-soft); border-radius: var(--radius); padding: 22px;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 0 20px; margin-bottom: 12px;
+  }
+  summary {
+    cursor: pointer; font-weight: 600; padding: 16px 28px 16px 0; list-style: none; position: relative;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+"; position: absolute; right: 0; top: 13px; font-size: 22px; color: var(--accent); font-weight: 400;
+  }
+  details[open] summary::after { content: "\2212"; }
+  details p { color: var(--muted); }
+
+  .policy h3 { margin-top: 22px; }
+  .policy h3:first-of-type { margin-top: 0; }
+
+  footer { padding: 28px 0 40px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
+
+  @media (min-width: 720px) {
+    body { font-size: 18px; }
+    h1 { font-size: 3rem; }
+    h2 { font-size: 1.9rem; }
+    section { padding: 72px 0; }
+    .hero { padding: 96px 0 80px; }
+    .grid.two { grid-template-columns: 1fr 1fr; }
+    .grid.three { grid-template-columns: 1fr 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap wide">
+    <a class="brand" href="#top">Andy Luu <span>Coaching</span></a>
+    <a class="top-cta" href="#contact">Book a free intro call</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">1:1 social skills coaching &middot; Online &amp; Vancouver, BC</span>
+      <h1>Feel at ease talking to anyone.</h1>
+      <p class="lead">I coach men who want to be more confident in conversation, whether that's making friends, holding your own at work, dating, or walking up to someone new. Especially if, like me, it never came naturally.</p>
+      <div class="actions">
+        <!-- BOOKING LINK: swap the mailto for a Google Calendar booking page or Calendly link when ready. -->
+        <a class="btn" href="mailto:andyluucoaching@gmail.com?subject=Free%20intro%20call">Book a free intro call</a>
+        <a class="btn btn-ghost" href="#coaching">See coaching options</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I HELP WITH -->
+  <section id="help">
+    <div class="wrap">
+      <h2>What I help with</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Starting conversations</h3>
+          <p class="muted small">Going from overthinking every opener to just saying hello, with strangers, coworkers, or at events.</p>
+        </div>
+        <div class="card">
+          <h3>Confidence and social anxiety</h3>
+          <p class="muted small">Finding the beliefs that hold you back and testing them against what actually happens.</p>
+        </div>
+        <div class="card">
+          <h3>Dating and approaching</h3>
+          <p class="muted small">Approaching women you don't know without the anxiety running the show.</p>
+        </div>
+        <div class="card">
+          <h3>Working through the emotions</h3>
+          <p class="muted small">Nerves, rejection, awkward moments. We talk through them instead of avoiding them.</p>
+        </div>
+      </div>
+      <h3 style="margin-top:28px">What this is not</h3>
+      <ul class="clean no">
+        <li>It's not a set of lines to memorize. You build real skills by doing real reps.</li>
+        <li>It doesn't promise phone numbers, dates, or any specific result from another person.</li>
+        <li>It's not therapy. If you're dealing with something a mental health professional should help with, please talk to one.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- COACHING OPTIONS -->
+  <section id="coaching">
+    <div class="wrap">
+      <h2>Coaching options</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>1:1 coaching sessions</h3>
+          <p class="muted small">A video call focused on whatever you're working on: a sticking point, an upcoming situation, or feedback on how your conversations are going.</p>
+          <ul class="clean small">
+            <li>60-minute 1:1 video call</li>
+            <li>A clear next step to practise before the next session</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>7-Day Approach Challenge</h3>
+          <p class="muted small">A one-week program for beginners at cold approach. You take action every day, and I review every day with you.</p>
+          <ul class="clean small">
+            <li>A daily approach goal you set with me</li>
+            <li>A daily written field report with my personal feedback</li>
+            <li>Four 30-minute calls: intro, midweek, wrap-up, retro</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <!-- PHOTO: add one clear headshot of Andy here when available. -->
+      <h2>About me</h2>
+      <p>I'm Andy Luu, a coach based in Vancouver, BC.</p>
+      <p>In high school I was very introverted. I couldn't hold eye contact, and I couldn't keep a conversation going. Social skills didn't come naturally to me, so I learned them from the ground up, one uncomfortable conversation at a time.</p>
+      <p>That's why I coach. I remember what it's like to want to say something and walk away without saying it. I'm currently working toward my ACC coaching certification.</p>
+      <p class="small muted">You can also find me on <a href="https://www.youtube.com/@convoswithandy" rel="noopener">YouTube</a>.</p>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="wrap">
+      <h2>Pricing</h2>
+      <p>Every coaching relationship starts with a free intro call, so we can see if it's a good fit. Prices are in US dollars and paid once by card through a secure payment link. No subscriptions.</p>
+      <div class="grid two">
+        <div class="card">
+          <h3>1:1 coaching session</h3>
+          <div class="price">US$75&ndash;200 <small>per hour</small></div>
+          <p class="small muted">Regular price <span class="was">US$300</span></p>
+        </div>
+        <div class="card price-card">
+          <span class="tag">Founding client price</span>
+          <h3>7-Day Approach Challenge</h3>
+          <div class="price">US$300 <small>one time</small></div>
+          <p class="small muted">Regular price <span class="was">US$500</span></p>
+          <!-- Completion reward: US$150 credit (decided for now). -->
+          <p class="small">Meet your daily goal all 7 days and get a US$150 credit toward your next program.</p>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="mailto:andyluucoaching@gmail.com?subject=Free%20intro%20call">Book a free intro call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POLICY -->
+  <section id="policy">
+    <div class="wrap policy">
+      <h2>Refund and cancellation policy</h2>
+      <h3>7-Day Approach Challenge</h3>
+      <ul class="clean">
+        <li><strong>Before the intro call:</strong> cancel any time and get a full refund.</li>
+        <li><strong>After the program starts:</strong> the program is non-refundable, except for the completion credit described above.</li>
+      </ul>
+      <h3>1:1 coaching sessions</h3>
+      <ul class="clean">
+        <li>Reschedule free with at least 24 hours' notice. Cancel with 24 hours' notice for a full refund.</li>
+      </ul>
+      <h3>How to cancel or reschedule</h3>
+      <p>Email <a href="mailto:andyluucoaching@gmail.com">andyluucoaching@gmail.com</a> with your name and booking date. Approved refunds go back to the card you paid with.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <h2>Questions</h2>
+      <details>
+        <summary>I'm really introverted. Is this for me?</summary>
+        <p>Yes. That's exactly where I started. We go at a pace you can actually keep, and build from small wins.</p>
+      </details>
+      <details>
+        <summary>Will this get me dates?</summary>
+        <p>I can't promise what another person will do, so I don't sell that. What I help with is your side: confidence, starting conversations, and handling what comes up. I'm glad to give feedback on dating situations along the way.</p>
+      </details>
+      <details>
+        <summary>Do I need to live in Vancouver?</summary>
+        <p>No. Coaching is by video call and written feedback, so it works wherever you live.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>Let's talk</h2>
+      <p>Book a free intro call. We'll talk about where you're at and what you want, and if it's not a fit, I'll tell you.</p>
+      <div class="actions" style="margin-top:0;margin-bottom:18px">
+        <a class="btn" href="mailto:andyluucoaching@gmail.com?subject=Free%20intro%20call">Book a free intro call</a>
+      </div>
+      <p><strong>Email:</strong> <a href="mailto:andyluucoaching@gmail.com">andyluucoaching@gmail.com</a></p>
+      <p class="small muted">Based in Vancouver, BC. Coaching is delivered online.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap wide">
+    <span>&copy; 2026 Andy Luu Coaching &middot; Vancouver, BC</span>
+    <span><a href="#pricing">Pricing</a> &middot; <a href="#policy">Refund policy</a> &middot; <a href="#contact">Contact</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
